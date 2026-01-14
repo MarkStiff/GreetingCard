@@ -1,0 +1,81 @@
+import { ZodiacOption, ZodiacSign } from "./types";
+
+export const ZODIAC_OPTIONS: ZodiacOption[] = [
+    { value: ZodiacSign.Dragon, label: "Dragon", labelCn: "龙", icon: "cruelty_free" },
+    { value: ZodiacSign.Rabbit, label: "Rabbit", labelCn: "兔", icon: "pets" },
+    { value: ZodiacSign.Tiger, label: "Tiger", labelCn: "虎", icon: "pest_control_rodent" },
+    { value: ZodiacSign.Snake, label: "Snake", labelCn: "蛇", icon: "waves" },
+    { value: ZodiacSign.Horse, label: "Horse", labelCn: "马", icon: "bedroom_baby" },
+    { value: ZodiacSign.Goat, label: "Goat", labelCn: "羊", icon: "grass" },
+    { value: ZodiacSign.Monkey, label: "Monkey", labelCn: "猴", icon: "face_3" },
+    { value: ZodiacSign.Rooster, label: "Rooster", labelCn: "鸡", icon: "sunny" },
+    { value: ZodiacSign.Dog, label: "Dog", labelCn: "狗", icon: "sound_detection_dog_barking" },
+    { value: ZodiacSign.Pig, label: "Pig", labelCn: "猪", icon: "savings" },
+    { value: ZodiacSign.Rat, label: "Rat", labelCn: "鼠", icon: "mouse" },
+    { value: ZodiacSign.Ox, label: "Ox", labelCn: "牛", icon: "agriculture" },
+];
+
+export const INITIAL_USER_DATA = {
+    name: "",
+    senderName: "",
+    profession: "",
+    gender: 'female' as const,
+    zodiac: ZodiacSign.Dragon,
+};
+
+export const TRANSLATIONS = {
+  en: {
+    appTitle: "New Year Blessings",
+    mainTitle: "Customize Your\nGreeting Card",
+    nameLabel: "To (Recipient Name)",
+    namePlaceholder: "Enter recipient's name",
+    senderLabel: "From (Your Name)",
+    senderPlaceholder: "Enter your name",
+    professionLabel: "Profession / Career",
+    professionPlaceholder: "e.g. Teacher, Designer, Doctor",
+    genderLabel: "Gender",
+    male: "Male",
+    female: "Female",
+    zodiacLabel: "Select Zodiac Sign",
+    scrollHint: "Scroll",
+    generateBtn: "Generate Card",
+    generating: "Designing...",
+    footerMsg: "May good fortune follow you",
+    previewTitle: "Preview",
+    editBtn: "Edit",
+    sendBtn: "Send to Friends",
+    saveBtn: "Save to Gallery",
+    createdVia: "Created via Lunar Blessings",
+    yearOf: "Year of",
+    toggleBtn: "中",
+    cardTo: "To",
+    cardFrom: "From"
+  },
+  cn: {
+    appTitle: "农历新年祝福",
+    mainTitle: "定制您的\n新春贺卡",
+    nameLabel: "致 (收福人姓名)",
+    namePlaceholder: "请输入对方姓名",
+    senderLabel: "自 (您的姓名)",
+    senderPlaceholder: "请输入您的姓名",
+    professionLabel: "职业 / 身份",
+    professionPlaceholder: "例如：教师、设计师、医生",
+    genderLabel: "性别",
+    male: "男",
+    female: "女",
+    zodiacLabel: "选择生肖",
+    scrollHint: "左右滑动",
+    generateBtn: "生成贺卡",
+    generating: "正在精心设计...",
+    footerMsg: "愿好运常伴左右",
+    previewTitle: "预览",
+    editBtn: "编辑",
+    sendBtn: "发送给朋友",
+    saveBtn: "保存到相册",
+    createdVia: "由 Lunar Blessings 制作",
+    yearOf: "岁次",
+    toggleBtn: "EN",
+    cardTo: "致",
+    cardFrom: "自"
+  }
+};

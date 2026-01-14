@@ -1,0 +1,5 @@
+{
+  "name": "Lunar Blessings Creator",
+  "description": "A customized Lunar New Year greeting card generator powered by Gemini. Create personalized cards with bilingual blessings based on name, gender, and zodiac sign.",
+  "requestFramePermissions": []
+}
